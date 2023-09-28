@@ -1,0 +1,74 @@
+Command Line Interface
+often used by programmers
+allows you to type commands to perform specific tasks
+a text interface to your computer
+
+ls - list directory contents
+cd - change directory
+mkdir - make directory
+command -help -allows you to view the help menu for a command
+man command - allows you to view the manual for a command
+cd .. - allows you to go back one directory
+cd - allows you to go back to the home directory
+cd ../.. - allows you to go back two directories
+/ means root directory
+cd - - allows you to go back to the previous directory
+rm - removes file
+touch - creates a file - can create multiple files using range (1..20)
+cp <source> <target>- copy paste
+mv <source> <target>- move/cut
+mv<source> <directory/newsourcename> - rename
+rm -r <directory> - remove directory
+rm -rf - f means force
+cat - view files
+open - open files and directory
+> - edits files
+>> concatenates files
+echo - logging texts
+less - view files
+head -n <line count> <source> - view file with selected line nos
+lsof -i <port> - list running files on a port
+kill -9 <pid> - kill process
+
+GIT
+Git is a version control system that tracks changes to files.
+It allows users to revert to previous versions of files and merge changes.
+Git can be used for any type of file, not just code. 
+Version Control System for tracking file changes.
+Supports collaborative development.
+
+Github is an online hosting service for git repositories.
+git help - shows help menu
+git help <command> - shows help menu for a specific command
+git config --global user.name "Your Name" - sets your name
+git config --global user.email "Email" - sets your email
+git init - initializes a git repository
+git status - shows the status of the current repository
+git add <file> - adds a file to the staging area
+git add . - adds all files to the staging area
+git log - shows the commit history
+
+Pushing to Repository
+Create a repository on Github
+git remote add origin <url> - adds a remote repository
+git push -u origin master - pushes the master branch to the remote repository
+
+git clone <url> - clones a repository from a remote source
+
+DEMO: demo 1 got pushed to demo 3
+
+Master/Main always restricted
+Make new branch for new features
+
+git reset --hard <commit> - resets the repository to a previous commit
+git restore <file> - restores a file to the last commit
+git stash - temporarily stores all modified tracked files
+
+Git Branching
+Branches allow iscolated development of features.
+git branch: Manage branches, create, list or delete them.
+git checkout & switch: Switch between branches.
+
+Github Desktop
+Git Extension VS Code
+Other Servers:Gitlab & GitKraken

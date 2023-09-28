@@ -1,0 +1,42 @@
+Blockchain 101
+Mining Rig -> affects GPU prices -> Silicon shortage worsens the price even more
+Mining Crypto -> Solving Puzzles
+
+Transaction Process (Bitcoin)
+Transaction Request -> creates a block -> block representation in the blockchain
+Everyone in the network -> have copy of the new block
+Nodes Validate the Transaction -> Validation = Mining
+Rewards are given to miners -> Cryptocurrency
+After Validating -> Block added to existing blockchain
+Transaction Complete!
+
+Blockchain (mahirap maedit / madaya)
+genesis block = first block (prev hash 00000)
+connected hashes like linked lists / chain
+Blockchain can reach millions of blocks
+
+Facebook Data Center
+
+Decentralized vs Centralized
+Consensus Mechanism -> Proof of Work (PoW) -> Bitcoin
+Consensus Mechanism -> Proof of Stake (PoS) -> Ethereum
+Consensus Mechanism -> Proof of History (PoH) -> Solana
+
+Mining Factory -> Large
+Mining Rig -> Small
+
+Proof of Work (PoW) -> High Energy Consumption
+Proof of Stake (PoS) -> Low Energy Consumption
+
+Assignment: Polygon (Matic)
+
+Fungible vs Non-Fungible 
+Fungible -> Interchangeable
+Non-Fungible -> Unique
+
+Tangible vs Intangible
+Tangible -> Physical
+Intangible -> Digital
+
+Be prepared for the f2f bootcamp
+Install everything

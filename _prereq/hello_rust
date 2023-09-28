@@ -1,0 +1,44 @@
+In this activity, we created a number guessing game. It also familiarized me with the syntax of Rust.
+I successfully followed the guide and made my own number_guessing game. The guide is straightforward and educational.
+I got a bit confused on the looping part but I eventually got it later on the video.
+The video discussed about creating variables, calling variables, looping, conditionals (if conditions), importing library, using library, download external library using cargo.
+
+Code:
+use std::io;
+use std::cmp::Ordering;
+use rand::Rng;
+
+fn main() {
+    println!("Guess the number");
+    println!("Please input your guess: ");
+    
+    let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
+
+    loop {
+        let mut input = String::new(); 
+        match io::stdin().read_line(&mut input) {
+            Ok(n) => { 
+                println!("{} bytes read", n);
+                println!("You guessed: {}", input);
+            }
+            Err(error) => println!("error: {}", error),
+        }
+        let guess: u32 = match input.trim().parse() {
+            Ok(num) => num, 
+            Err(_) => {
+                println!("Please enter a valid number.");
+                continue;
+            }
+        };
+        
+        match guess.cmp(&secret_number) {
+            Ordering::Equal => {
+                println!("You win!");
+                break;
+            }
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+        }
+    }
+}
+
